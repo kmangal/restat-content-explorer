@@ -3,4 +3,4 @@ This is an R Shiny web application that was created for the 100th anniversary of
 
 The code here is for a demonstration version of the app. The code is curretly live at: https://hksphdsurvey.shinyapps.io/restat-content-explorer/
 
-Note that someof the functionality has been disabled.
+Note that some of the functionality has been disabled.
