@@ -1,0 +1,71 @@
+<html itemscope itemtype="http://schema.org/WebApplication"
+      xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+{{ headContent() }}
+
+{{ includeCSS('www/bootstrap.css') }}
+
+</head>
+
+  <body>
+  
+  	          {{ actionLink("tweetthis", "Tweet this graph") }}
+
+	<div style="margin-left:10%; margin-right:25%">
+     <div>
+         <h1 id="logo">
+		  <table>
+		   <tr>
+			 <td style="padding-left: 0cm; color: #cc0000; font-size: 28px;">ReStat Content Explorer</td>
+			 
+		   </tr>
+		  </table>
+		</h1>
+        <h4 class = "lead">Track the popularity of words and phrases over time in the articles of the <i>Review of Economics and Statistics</i>.</h4>
+		<p>As part of its centenary celebrations, the <a href="https://www.mitpressjournals.org/loi/rest">Review of Economics and Statistics</a> is inviting readers to explore how the content of the journal has evolved over the course of its history.</p>
+	  </div>
+	  
+	  <div>Graph the popularity of the following comma-separated words or phrases:</div>
+	  <div><input id = "searchtext" class="query shiny-bound-input" type="text"
+                   name="searchtext"
+                   size="60"
+                   value=""
+				   placeholder="Search word"
+                   style="padding-right: 20;font-size:12pt; vertical-align: middle"
+                   maxlength=240 />
+		<div style = "padding-top: 10px">measuring popularity by
+			<select id = "graphtype" name="graphtype" style = "vertical-align: middle; position:relative;">
+			  <option value="fracarticle" selected>article count</option>
+			  <option value="fracword">word count</option>
+			</select>
+		</div>
+		<div style = "padding-top: 10px">
+			<input type="submit" value="Plot" style = "height: 30px; vertical-align: middle" />
+		</div>
+		<div id="warning" class="shiny-text-output" style = "font-size: 14px; padding-top: 25px"></div>
+	
+	</div>
+	<hr/>
+	<br/>
+	<center>
+
+	<div align="left" style="position:relative; padding-bottom:450px; margin-left:50px;">
+
+		<div id="plot" class="shiny-plot-output" style="position:absolute; top: 25px; left: 0px; width: 100%; height: 400px"></div></div>
+	  </center>
+	</div> 
+<br/>
+
+<center>
+<hr />
+<div id="about">&copy; 2018 the President and Fellows of Harvard College and the Massachusetts Institute of Technology
+</div>
+<div>Developed by <a href="https://scholar.harvard.edu/kmangal/home">Kunal Mangal</a> and <a href="https://khwaja.scholar.harvard.edu/">Asim Khwaja</a> -
+  Data provided by <a href="https://www.jstor.org/dfr/">JSTOR</a></div>
+</center>
+
+</body>
+
+</html>

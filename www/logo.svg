@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="600"
+   height="17"
+   viewBox="0 0 158.75 4.4979168"
+   version="1.1"
+   id="svg26"
+   sodipodi:docname="logo.svg"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)">
+  <defs
+     id="defs20" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="3.4106084"
+     inkscape:cx="332.51244"
+     inkscape:cy="-0.50507627"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     units="px"
+     inkscape:window-width="1366"
+     inkscape:window-height="705"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     showguides="false" />
+  <metadata
+     id="metadata23">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-292.50205)">
+    <rect
+       style="fill:#f2f2f2;stroke-width:0.26458332;fill-opacity:1"
+       id="rect28"
+       width="158.89174"
+       height="4.9444833"
+       x="0.13363476"
+       y="292.32275" />
+    <path
+       style="fill:#f2f2f2;fill-opacity:1;stroke-width:0.50507629"
+       d="M 0.37535888,8.5881442 V -0.75576687 H 300.6432 600.91105 V 8.5881442 17.932055 H 300.6432 0.37535888 Z"
+       id="path3748"
+       inkscape:connector-curvature="0"
+       transform="matrix(0.26458333,0,0,0.26458333,0,292.50205)" />
+    <path
+       style="fill:#f2f2f2;fill-opacity:1;stroke-width:0.13363476"
+       d="m 0.0993137,295.16221 v -2.47224 H 79.545179 158.99105 v 2.47224 2.47225 H 79.545179 0.0993137 Z"
+       id="path3750"
+       inkscape:connector-curvature="0" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.58333302px;line-height:1.25;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman, ';letter-spacing:0px;word-spacing:0px;fill:#ed1c24;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="103.22209"
+       y="295.52231"
+       id="text4567"><tspan
+         sodipodi:role="line"
+         id="tspan4565"
+         x="103.22209"
+         y="295.52231"
+         style="font-style:italic;font-size:4.05694437px;fill:#ed1c24;fill-opacity:1;stroke-width:0.26458332">Content Explorer</tspan></text>
+    <path
+       style="fill:#000000;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 102.23059,296.46543 Z"
+       id="path4575"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 102.23059,296.46543 Z"
+       id="path4577"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;stroke:#ed1c24;stroke-width:0.20070747;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 45.574809,296.3318 56.126631,0.13362"
+       id="path4581"
+       inkscape:connector-curvature="0" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.58333302px;line-height:1.25;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman, ';letter-spacing:0px;word-spacing:0px;fill:#ed1c24;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="45.510105"
+       y="295.43555"
+       id="text4567-7"><tspan
+         sodipodi:role="line"
+         id="tspan4565-5"
+         x="45.510105"
+         y="295.43555"
+         style="font-style:normal;font-size:3.91936111px;fill:#ed1c24;fill-opacity:1;stroke-width:0.26458332">Review of Economics and Statistics</tspan></text>
+  </g>
+</svg>

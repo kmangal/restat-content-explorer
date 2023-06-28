@@ -1,0 +1,107 @@
+<html itemscope itemtype="http://schema.org/WebApplication"
+      xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+{{ headContent() }}
+
+{{ useShinyjs() }}
+{{ extendShinyjs(text = "shinyjs.browseURL = function(url) {
+  var newwin = window.open();
+  newwin.location = url;
+  
+}
+", functions = 'browseURL') }}
+
+{{ includeCSS('www/bootstrap.css') }}
+
+<style>
+li{
+  margin: 5px 0;
+}
+.btn {
+	background-color: #dddddd;
+}
+</style>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-131914483-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+ 
+  gtag('config', 'UA-131914483-1');
+</script>
+
+</head>
+
+  <body>
+  
+	<div style="margin-left:10%; margin-right:25%">
+     <div>
+		<img src='masthead_v5.png' alt="Logo" style="width:100%; padding-bottom: 15px;">
+        <h4 class = "lead">Track the popularity of words and phrases over time in the articles of the <i>Review of Economics and Statistics</i>.</h4>
+		<p>To celebrate its 100th anniversary, the <a href="https://www.mitpressjournals.org/loi/rest">Review of Economics and Statistics</a> is inviting readers to explore how the content of the journal has evolved over the course of its history.</p>
+	  </div>
+	  
+	  <div>Graph the popularity of the following comma-separated words or phrases:</div>
+	  <div><input id = "searchtext" class="query shiny-bound-input" type="text"
+                   name="searchtext"
+                   size="60"
+                   value=""
+				   placeholder="Search words or phrases"
+                   style="padding-right: 20;font-size:12pt; vertical-align: middle"
+                   maxlength=240 />
+		<div style = "padding-top: 10px">measuring popularity by
+			<select id = "graphtype" name="graphtype" style = "vertical-align: middle; position:relative;">
+			  <option value="fracarticle" selected>article count</option>
+			  <option value="fracword">word count</option>
+			</select>
+			with a smoothing factor of 
+			<select id = "smoothing" name="smoothing" style = "vertical-align: middle; position:relative;">
+			  <option value="0" selected>0</option>
+			  <option value="1">1</option>
+			  <option value="2">2</option>
+			  <option value="3">3</option>
+			</select>			
+		</div>
+		<div style = "padding-top: 10px">
+	{{ actionButton("submit", "Plot") }}
+		</div>	
+		<div id="warning" class="shiny-text-output" style = "font-size: 14px; padding-top: 20px"></div>
+	</div>
+	<hr/>
+	<br/>
+	<center>
+  
+  	  	<div align = "left" style="position:absolute; left:80%; padding-left:12px;">{{ actionLink("tweetthis", "Tweet this graph") }} <br/>{{ downloadLink('downloadPlot', 'Download this graph') }} </div>
+		<div id="plot" class="shiny-plot-output" style="width: 100%; height: 400px;"></div>
+	
+	</center>
+
+	<div style = "font-size: 14px; margin-top: 12px;">
+	<i>Notes</i>:
+	<ul>
+	  <li><b>Search words/phrases</b>: Phrases can be up to three words long. Graph multiple words or phrases at a time by separating them with commas, e.g. "policy, model, treatment effect"</li>
+	  <li><b>Popularity measures</b>: "Article count" takes the number of articles that mention each phrase by year and divides by the total number of articles published in that year. "Word count" divides the number of appearances of each phrase in a given year by the total number of phrases of the same word length published in that year.</li>
+	  <li><b>Smoothing</b>: Plots a simple moving average using the specified number of years of leads and lags. A smoothing factor of 0 plots the raw data.
+	</ul>
+
+	</div>	
+	
+	<br />
+	
+	</div>
+
+<hr />
+<center>
+<div id="about">&copy; 2019 the President and Fellows of Harvard College and the Massachusetts Institute of Technology
+</div>
+<div>Developed by <a href="https://scholar.harvard.edu/kmangal/home">Kunal Mangal</a> and <a href="https://khwaja.scholar.harvard.edu/">Asim Khwaja</a> -
+  Data provided by <a href="https://www.jstor.org/dfr/">JSTOR</a></div>
+</center>
+
+</body>
+
+</html>
